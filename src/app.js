@@ -21,7 +21,7 @@ app.set('views', path.join( __dirname, '/views') )
 
 //routes
 app.use('/', router);
-
+app.set('port', process.env.PORT || 3002 )
 
 
 /* Conexion a DB Atlas */
@@ -30,5 +30,4 @@ mongoose.connect(process.env.URI_MONGODB)
     .catch(err => {console.log(err);})
 
 /* Escuchando en el servidor 3002 */
-const port = 3002;
-app.listen(port, ()=>{console.log(`server Ok, http://localhost:${port}`);}) 
+app.listen(app.get('port'), ()=>{console.log(`server Ok, http://localhost:${app.get('port')}`);}) 
