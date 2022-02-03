@@ -13,6 +13,11 @@
 
 **Esto es un proyecto personal para practicar la connexión a una BD en mongo Atlas**
 
+[VISUALIZAR APP AQUI](https://things-thodo.herokuapp.com/ "VISUALIZAR APP AQUI")
+
+
+
+
 ***Los pasos seguidos son:***
 1. Instalación de dependencias:
 2. Arrancar el servidor.
